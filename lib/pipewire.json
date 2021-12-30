@@ -1,0 +1,38 @@
+{
+    "name": "pipewire",
+    "buildsystem": "meson",
+    "config-opts": [
+        "--buildtype=release",
+        "--wrap-mode=nofallback",
+        "-Ddocs=disabled",
+        "-Dexamples=disabled",
+        "-Dman=disabled",
+        "-Dtests=disabled",
+        "-Dinstalled_tests=disabled",
+        "-Dsystemd=disabled",
+        "-Dsystemd-system-service=disabled",
+        "-Daudiotestsrc=disabled",
+        "-Djack=disabled",
+        "-Droc=disabled",
+        "-Dvideotestsrc=disabled",
+        "-Dvolume=disabled",
+        "-Dvulkan=disabled",
+        "-Dbluez5-codec-ldac=disabled",
+        "-Dbluez5-codec-aptx=disabled",
+        "-Dlibcamera=disabled",
+        "-Dudevrulesdir=/tmp/lib/udev/rules.d",
+        "-Dsession-managers=[]",
+        "-Draop=disabled",
+
+        "-Dgstreamer=enabled",
+        "-Dgstreamer-device-provider=enabled"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
+            "tag": "0.3.42",
+            "commit": "3cac296ee09091ef64a3daa1d62529f7c13af0f2"
+        }
+    ]
+}
