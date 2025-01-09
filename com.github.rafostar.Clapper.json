@@ -24,7 +24,7 @@
         "--filesystem=xdg-run/pipewire-0:ro",
         "--filesystem=xdg-videos",
         "--filesystem=xdg-run/gvfsd",
-        "--own-name=org.mpris.MediaPlayer2.Clapper",
+        "--own-name=org.mpris.MediaPlayer2.Clapper.*",
         "--talk-name=org.gtk.vfs.*",
         "--env=GST_PLUGIN_SYSTEM_PATH=/app/lib/gstreamer-1.0"
     ],
@@ -51,15 +51,13 @@
                 "-Dmpris=enabled",
                 "-Dserver=enabled",
                 "-Dintrospection=disabled",
-                "-Dvapi=disabled",
-                "-Dc_args=\"-DHAVE_GST_PATCHES=1\""
+                "-Dvapi=disabled"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/Rafostar/clapper.git",
-                    "tag": "0.6.1",
-                    "commit": "86898d078223d397e18eb0779bff126494b9eb2f"
+                    "commit": "80285fb50b306c06479fbc2f22838795bed71d85"
                 }
             ]
         }
