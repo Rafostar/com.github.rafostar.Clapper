@@ -1,0 +1,14 @@
+{
+    "name": "clapper-enhancers",
+    "buildsystem": "meson",
+    "config-opts": [
+        "-Dauto_features=enabled"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/Rafostar/clapper-enhancers.git",
+            "commit": "30d76aa10ea8471ede8078c89bc7b460cd7b175e"
+        }
+    ]
+}
